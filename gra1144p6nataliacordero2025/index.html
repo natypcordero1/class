@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Princess Polly | Natalia Cordero, 2025</title>
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+}
+wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    display: block;
+    background-color: fff;
+}
+section   {
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	vertical-align: top;
+}
+.apparel{
+	position: relative	
+}
+div{
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    visibility: hidden;
+}
+nav button{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border-radius: 25px;
+    display: inline-block;
+    border: thick solid white;
+}
+nav button:hover {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border-radius: 25px;
+    display: inline-block;
+    border: thick solid black;
+}
+	.brown{ 
+	background-color: rgba(60,25,26,1.00)
+	}
+	.green{ 
+	background-color: rgba(60,61,26,1.00)
+	}
+	.black{ 
+	background-color: rgba(0,0,0,1.00)
+	}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('backblack.jpg','backgreen.jpg','backbrown.jpg')">
+<wrapper>
+  <header>Content for New header Tag Goes Here</header>
+  <main>
+    <section>
+		<h2>Short Sleeve Shirt</h2>
+		<h3>$28.99</h3>
+	  <h3>Colors</h3>
+	  <nav>
+	    <button class="brown" onClick="MM_showHideLayers('front-brown','','show','front-green','','hide','front-black','','hide')"></button>
+	    <button class="green" onClick="MM_showHideLayers('front-brown','','hide','front-green','','show','front-black','','hide')"></button>
+	    <button class="black" onClick="MM_showHideLayers('front-brown','','hide','front-green','','hide','front-black','','show')"></button>
+      </nav>
+<h3>Sizes</h3>
+			<button>XS</button>
+		<button>S</button>
+		<button>M</button>
+		<button>L</button>
+		<button>XL</button>
+		<h3>Quantity</h3>
+	  <button>Add To Cart</button>
+		<h3>Design</h3>
+		<p>A semi-formal, casual, but kind of elegant shirt, that makes you feel serious with a touch of comfort  </p>
+		<h3>Details</h3>
+		<ul>
+		<li>Short-sleeve shirt top</li>
+		<li>Classic collar, double button closure, petal sleeves, tie-back detail</li>
+		<li>Non-stretch material, fully lined</li>
+		<li>Main: 100% cotton, Lining: 100% polyester</li>
+       <li>Cold gentle machine wash</li>
+		</ul>
+		
+    </section>
+    <section class="apparel">
+      <div class="brown" style="visibility:visible"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('front-brown','','backbrown.jpg',1)"><img src="frontbrown.jpg" alt="Short Sleeve Brown Shirt" width="591" height="800" id="front-brown"></a></div>
+      <div class="green">
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('front-green','','backgreen.jpg',1)"><img src="frontgreen.jpg" alt="Short Sleeve Green Shirt" width="591" height="800" id="front-green"></a></div>
+      <div class="black"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('front-black','','backblack.jpg',1)"><img src="frontblack.jpg" alt="Short Sleeve Black Shirt" width="600" height="800" id="front-black"></a></div>
+ </section>
+  </main>
+</wrapper>
+</body>
+</html>
