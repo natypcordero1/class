@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Princess Polly | Natalia Cordero, 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
     padding: 0;
@@ -14,6 +17,56 @@ wrapper {
     display: block;
     background-color: fff;
 }
+main {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+	}
+header {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;   
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+	}
+	nav {
+    margin-top: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+nav a li {
+    display: inline-block;
+    margin: 0 15px;
+    list-style-type: none;
+}
+footer {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+}
 section   {
     width: 50%;
     display: inline-block;
@@ -24,14 +77,63 @@ section   {
 	vertical-align: top;
 }
 .apparel{
-	position: relative	
+	position: relative
+	text-align: center;
+    height: 800px;
+    width: 45%;
+    position: relative;
 }
+	section:first-of-type{
+    padding-right: 40px;
+}
+section:last-of-type{
+    padding-left: 40px;
+}   
+	section h2{
+    margin-top: 0;
+    font: bold 24px 'Lato', sans-serif;
+	}
+	section h3{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font: bold 18px 'Lato', sans-serif;
+	}
+	section p{
+    margin-top: 0;
+    font: 16px 'Lato', sans-serif;
+}
+	section ul{
+    margin-top: 0;
+    padding-left: 20px;
+	font: 16px 'Lato', sans-serif;
+}
+section li{
+    margin-bottom: 5px;
+	font: 16px 'Lato', sans-serif;
+}    
 div{
     position: absolute;
     top: 0px;
     left: 40px;
     visibility: hidden;
 }
+section button{
+    width: 90px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border: thin solid black;
+	}
+section button:hover{
+	width: 90px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border: thin solid red;
+    background-color: white;
+	}
 nav button{
     width: 50px;
     height: 50px;
@@ -40,6 +142,10 @@ nav button{
     display: inline-block;
     border: thick solid white;
 }
+	button .cart{
+		width: 100px;
+    height: 100px;
+	}
 nav button:hover {
     width: 50px;
     height: 50px;
@@ -92,7 +198,15 @@ function MM_showHideLayers() { //v9.0
 
 <body onLoad="MM_preloadImages('backblack.jpg','backgreen.jpg','backbrown.jpg')">
 <wrapper>
-  <header>Content for New header Tag Goes Here</header>
+  <header><img src="logo.png" alt="Princess Polly Logo" width="325" height="100">
+    <nav>
+      <a href="index.html"><li>Home</li></a>  
+    <a href="clothing.html"><li>Clothing</li></a>  
+      <a href="accessories.html"><li>Accessories</li></a>  
+      <a href="shoes.html"><li>Shoes</li></a>  
+      <a href="beauty.html"><li>Beauty</li></a>  
+      <a href="sale.html"><li>Sale</li></a>
+    </nav></header>
   <main>
     <section>
 		<h2>Short Sleeve Shirt</h2>
@@ -109,8 +223,8 @@ function MM_showHideLayers() { //v9.0
 		<button>M</button>
 		<button>L</button>
 		<button>XL</button>
-		<h3>Quantity</h3>
-	  <button>Add To Cart</button>
+		<h3>Quantity</h3>>
+	  <button class="cart"> Add to Cart</button>
 		<h3>Design</h3>
 		<p>A semi-formal, casual, but kind of elegant shirt, that makes you feel serious with a touch of comfort  </p>
 		<h3>Details</h3>
