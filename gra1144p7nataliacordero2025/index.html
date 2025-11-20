@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Trippio</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: rgba(115,186,245,1.00);
+}
+wrapper {
+    margin: auto;
+    width: 1200px;
+    display: block;
+}
+header {
+    height: 100px;
+    background-color: gold;
+}
+#Tabs1 img {
+    width: 75px;
+    height: auto;
+}
+#Tabs1 ul p {
+    text-align: center;
+}
+#Tabs1 li {
+    height: 170px;
+    vertical-align: bottom;
+}
+#Tabs1 ul li {
+    vertical-align: bottom;
+    text-align: center;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body></body>
+<wrapper>
+  <header></header>
+  <main>
+    <div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1"><img src="plane.png" alt="" width="431" height="432">
+		<p>Flights</p>
+		</a></li>
+    <li><a href="#tabs-2"><img src="hotel.png" alt="" width="450" height="526">
+		<p>Hotels</p>
+		</a></li>
+    <li><a href="#tabs-3"><img src="car.png" alt="" width="571" height="469">
+		<p>Cars</p>
+		</a></li>
+    <li><a href="#tabs-4"><img src="cruise.png" alt="" width="378" height="274">
+		<p>Cruises</p>
+		</a></li>
+    <li><a href="#tabs-5"><img src="camera.png" alt="" width="541" height="400">
+		<p>Activities</p>
+		</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Content 1</p>
+  </div>
+  <div id="tabs-2">
+    <p>Content 2</p>
+  </div>
+  <div id="tabs-3">
+    <p>Content 3</p>
+  </div>
+  <div id="tabs-4">
+    <p>Content 4</p>
+  </div>
+  <div id="tabs-5">
+    <p>Content 5</p>
+  </div>
+</div></main>
+  <footer><p>© 2025, Natalia Cordero. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</html>
